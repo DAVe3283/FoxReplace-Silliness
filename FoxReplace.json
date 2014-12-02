@@ -70,93 +70,127 @@
       "enabled": true
     },
     {
-      "name": "XKCD #1228",
-      "urls": [
-        "*"
-      ],
+      "name": "XKCD #1288",
+      "urls": [],
       "substitutions": [
         {
-          "input": "witnesses",
-          "inputType": "wholewords",
-          "output": "<span title=\"witnesses\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">these dudes I know</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "allegedly",
-          "inputType": "wholewords",
-          "output": "<span title=\"allegedly\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">kinda probably</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "new study",
-          "inputType": "wholewords",
-          "output": "<span title=\"new study\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">tumblr post</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "rebuild",
-          "inputType": "wholewords",
-          "output": "<span title=\"rebuild\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">avenge</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "space",
-          "inputType": "wholewords",
-          "output": "<span title=\"space\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">spaaaace</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "Google Glass",
-          "inputType": "wholewords",
-          "output": "<span style=\"title=\"Google Glass\" text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">virtual boy</span>",
+          "input": "\\b(witnesses)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">these dudes I know</span>",
           "caseSensitive": true
         },
         {
-          "input": "smartphone",
-          "inputType": "wholewords",
-          "output": "<span title=\"smartphone\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">pokedex</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "electric",
-          "inputType": "wholewords",
-          "output": "<span title=\"electric\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">atomic</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "Senator",
-          "inputType": "wholewords",
-          "output": "<span title=\"Senator\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Elf-Lord</span>",
+          "input": "\\b(Witnesses)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">These dudes I know</span>",
           "caseSensitive": true
         },
         {
-          "input": "car",
-          "inputType": "wholewords",
-          "output": "<span title=\"car\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">cat</span>",
+          "input": "\\b(allegedly)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">kinda probably</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Allegedly)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Kinda probably</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(new study)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Tumblr post</span>",
           "caseSensitive": false
         },
         {
-          "input": "election",
-          "inputType": "wholewords",
-          "output": "<span title=\"election\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">eating contest</span>",
+          "input": "\\b(rebuild)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">avenge</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Rebuild)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Avenge</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b((s)pace)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2paaace</span>",
           "caseSensitive": false
         },
         {
-          "input": "congressional leader",
-          "inputType": "wholewords",
-          "output": "<span style=\"title=\"congressional leader\" text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">river spirit</span>",
+          "input": "\\b(Google Glass)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Virtual Boy</span>",
           "caseSensitive": false
         },
         {
-          "input": "homeland security",
-          "inputType": "wholewords",
-          "output": "<span title=\"homeland security\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">homestar runner</span>",
+          "input": "\\b(smartphone)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">pokédex</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Smartphone)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Pokédex</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(electric)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">atomic</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Electric)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Atomic</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(senator(s?))\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Elf-Lord$2</span>",
           "caseSensitive": false
         },
         {
-          "input": "could not be reached for comment",
-          "inputType": "wholewords",
-          "output": "<span title=\"could not be reached for comment\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">is guilty and everyone knows it</span>",
+          "input": "\\b((c)ar)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2at</span>",
+          "caseSensitive": false
+        },
+        {
+          "input": "\\b(election)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">eating contest</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Election)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Eating contest</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(congressional leaders)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">river spirits</span>",
+          "caseSensitive": false
+        },
+        {
+          "input": "\\b(homeland security)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Homestar Runner</span>",
+          "caseSensitive": false
+        },
+        {
+          "input": "\\b(could not be reached for comment)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">is guilty and everyone knows it</span>",
           "caseSensitive": false
         }
       ],
