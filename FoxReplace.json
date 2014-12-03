@@ -143,13 +143,13 @@
           "input": "\\b((C)ar)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2at</span>",
-          "caseSensitive": true
+          "caseSensitive": false
         },
         {
           "input": "\\b((E)lection)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2ating contest</span>",
-          "caseSensitive": true
+          "caseSensitive": false
         },
         {
           "input": "\\b(congressional leaders)\\b",
