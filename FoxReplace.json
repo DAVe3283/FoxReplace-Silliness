@@ -3,9 +3,7 @@
   "groups": [
     {
       "name": "General Sillyness",
-      "urls": [
-        "*"
-      ],
+      "urls": [],
       "substitutions": [
         {
           "input": "([Hh]urricane( [A-Z]\\w+)?)",
@@ -31,9 +29,7 @@
     },
     {
       "name": "Political",
-      "urls": [
-        "*"
-      ],
+      "urls": [],
       "substitutions": [
         {
           "input": "Republicans",
@@ -191,6 +187,32 @@
           "input": "\\b(could not be reached for comment)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">is guilty and everyone knows it</span>",
+          "caseSensitive": false
+        }
+      ],
+      "html": "output",
+      "enabled": true
+    },
+    {
+      "name": "Cloud to Butt",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "\\b(The Cloud)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">My Butt</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(The cloud)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">My butt</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(the cloud)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">my butt</span>",
           "caseSensitive": false
         }
       ],
