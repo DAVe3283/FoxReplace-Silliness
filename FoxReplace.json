@@ -2,7 +2,7 @@
   "version": "0.15",
   "groups": [
     {
-      "name": "General Sillyness",
+      "name": "General Silliness",
       "urls": [],
       "substitutions": [
         {
@@ -12,15 +12,35 @@
           "caseSensitive": true
         },
         {
-          "input": "oil",
-          "inputType": "wholewords",
-          "output": "<span title=\"oil\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">flogiston</span>",
+          "input": "\\b(oil)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">flogiston</span>",
           "caseSensitive": true
         },
         {
-          "input": "Oil",
-          "inputType": "wholewords",
-          "output": "<span title=\"Oil\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Flogiston</span>",
+          "input": "(Oil)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Flogiston</span>",
+          "caseSensitive": true
+        }
+      ],
+      "html": "output",
+      "enabled": true
+    },
+    {
+      "name": "Technology",
+      "urls": [],
+      "substitutions": [
+        {
+          "input": "(Apple)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Rebel Alliance</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "(Microsoft)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Galactic Empire</span>",
           "caseSensitive": true
         }
       ],
@@ -31,6 +51,18 @@
       "name": "Political",
       "urls": [],
       "substitutions": [
+        {
+          "input": "Senate",
+          "inputType": "wholewords",
+          "output": "<span title=\"Senate\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Clown College</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "Congress",
+          "inputType": "wholewords",
+          "output": "<span title=\"Congress\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Idiot House</span>",
+          "caseSensitive": true
+        },
         {
           "input": "Republicans",
           "inputType": "wholewords",
@@ -56,11 +88,30 @@
           "caseSensitive": true
         },
         {
+          "input": "(([Tt]he )?President)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Mayor Mc'Cheese</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "(Pentagon)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Deathstar</span>",
+          "caseSensitive": true
+        },
+        {
           "input": "NATO",
           "inputType": "wholewords",
-          "output": "<title=\"NATO\" span style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">The Last Alliance of Elves an Men</span>",
+          "output": "<span title=\"NATO\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">The Last Alliance of Elves an Men</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "California",
+          "inputType": "wholewords",
+          "output": "<span title=\"California\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">The Glorious People's Republic of California</span>",
           "caseSensitive": true
         }
+
       ],
       "html": "output",
       "enabled": true
@@ -112,10 +163,10 @@
           "caseSensitive": true
         },
         {
-          "input": "\\b((s)pace)\\b",
+          "input": "\\b(([Ss])pace)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2paaace</span>",
-          "caseSensitive": false
+          "caseSensitive": true
         },
         {
           "input": "\\b(Google Glass)\\b",
@@ -154,21 +205,15 @@
           "caseSensitive": false
         },
         {
-          "input": "\\b((c)ar)\\b",
+          "input": "\\b(([Cc])ar)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2at</span>",
-          "caseSensitive": false
-        },
-        {
-          "input": "\\b(election)\\b",
-          "inputType": "regexp",
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">eating contest</span>",
           "caseSensitive": true
         },
         {
-          "input": "\\b(Election)\\b",
+          "input": "\\b(([Ee])lection)\\b",
           "inputType": "regexp",
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Eating contest</span>",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2ating contest</span>",
           "caseSensitive": true
         },
         {
@@ -178,10 +223,10 @@
           "caseSensitive": false
         },
         {
-          "input": "\\b(homeland security)\\b",
+          "input": "\\b([Hh]omeland [Ss]ecurity)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Homestar Runner</span>",
-          "caseSensitive": false
+          "caseSensitive": true
         },
         {
           "input": "\\b(could not be reached for comment)\\b",
