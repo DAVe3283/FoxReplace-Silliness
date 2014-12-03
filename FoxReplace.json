@@ -46,6 +46,18 @@
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Phlogisticated</span>",
           "caseSensitive": true
+        },
+        {
+          "input": "\\b(burned)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">phlogisticated</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Burned)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Phlogisticated</span>",
+          "caseSensitive": true
         }
       ],
       "html": "output",
@@ -187,6 +199,12 @@
           "input": "\\b(Apple)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Rebel Alliance</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Apple CEO)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sith Lord</span>",
           "caseSensitive": true
         },
         {
