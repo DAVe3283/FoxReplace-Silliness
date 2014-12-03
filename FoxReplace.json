@@ -222,9 +222,9 @@
           "caseSensitive": true
         },
         {
-          "input": "Republican",
-          "inputType": "wholewords",
-          "output": "<span title=\"Republican\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Zuul Acolyte</span>",
+          "input": "\\b(Republican(?! Party))\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Zuul Acolyte</span>",
           "caseSensitive": true
         },
         {
@@ -263,7 +263,6 @@
           "output": "<span title=\"California\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">The Glorious People's Republic of California</span>",
           "caseSensitive": true
         }
-
       ],
       "html": "output",
       "enabled": true
