@@ -50,13 +50,25 @@
         {
           "input": "\\b(burned)\\b",
           "inputType": "regexp",
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">phlogisticated</span>",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">dephlogisticated</span>",
           "caseSensitive": true
         },
         {
           "input": "\\b(Burned)\\b",
           "inputType": "regexp",
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Phlogisticated</span>",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Dephlogisticated</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(burn)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">dephlogisticated</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(Burn)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Dephlogisticated</span>",
           "caseSensitive": true
         }
       ],
