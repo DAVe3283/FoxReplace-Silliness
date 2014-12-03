@@ -52,6 +52,12 @@
       "urls": [],
       "substitutions": [
         {
+          "input": "White House",
+          "inputType": "wholewords",
+          "output": "<span title=\"White House\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Out House</span>",
+          "caseSensitive": true
+        },
+        {
           "input": "Senate",
           "inputType": "wholewords",
           "output": "<span title=\"Senate\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Clown College</span>",
