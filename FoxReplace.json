@@ -6,6 +6,18 @@
       "urls": [],
       "substitutions": [
         {
+          "input": "((Ii)nternet)",
+          "inputType": "wholewords",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Web-O-Tron</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "Facebook",
+          "inputType": "wholewords",
+          "output": "<span title=\"Facebook\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Derpbook</span>",
+          "caseSensitive": true
+        },
+        {
           "input": "([Hh]urricane( [A-Z]\\w+)?)",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Godzilla</span>",
@@ -32,6 +44,12 @@
       "urls": [],
       "substitutions": [
         {
+          "input": "(Google)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">TEH GOOGLES</span>",
+          "caseSensitive": true
+        },
+        {
           "input": "(Apple)",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Rebel Alliance</span>",
@@ -51,6 +69,12 @@
       "name": "Political",
       "urls": [],
       "substitutions": [
+        {
+          "input": "(([Tt]he )?House of Representatives)",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Ikea</span>",
+          "caseSensitive": true
+        },
         {
           "input": "White House",
           "inputType": "wholewords",
