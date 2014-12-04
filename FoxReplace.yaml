@@ -1,0 +1,223 @@
+groups:
+- enabled: true
+  html: output
+  name: General Silliness
+  substitutions:
+  - caseSensitive: false
+    input: \b(Internet)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Web-O-Tron</span>'
+  - caseSensitive: true
+    input: Facebook
+    inputType: wholewords
+    output: '<span title="Facebook" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Derpbook</span>'
+  - caseSensitive: true
+    input: '([Hh]urricane( [A-Z]\w+)?)'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Godzilla</span>'
+  - caseSensitive: true
+    input: \b(oil)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">phlogiston</span>'
+  - caseSensitive: true
+    input: \b(Oil)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Phlogiston</span>'
+  - caseSensitive: true
+    input: \b(oiled)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">phlogisticated</span>'
+  - caseSensitive: true
+    input: \b(Oiled)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Phlogisticated</span>'
+  - caseSensitive: true
+    input: \b(burned)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">dephlogisticated</span>'
+  - caseSensitive: true
+    input: \b(Burned)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Dephlogisticated</span>'
+  - caseSensitive: true
+    input: \b(burn)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">dephlogisticate</span>'
+  - caseSensitive: true
+    input: \b(Burn)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Dephlogisticate</span>'
+  urls: []
+- enabled: true
+  html: output
+  name: 'XKCD #1288'
+  substitutions:
+  - caseSensitive: true
+    input: \b(witnesses)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">these dudes I know</span>'
+  - caseSensitive: true
+    input: \b(Witnesses)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">These dudes I know</span>'
+  - caseSensitive: true
+    input: \b(allegedly)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">kinda probably</span>'
+  - caseSensitive: true
+    input: \b(Allegedly)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Kinda probably</span>'
+  - caseSensitive: false
+    input: \b(new study)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Tumblr post</span>'
+  - caseSensitive: true
+    input: \b(rebuild)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">avenge</span>'
+  - caseSensitive: true
+    input: \b(Rebuild)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Avenge</span>'
+  - caseSensitive: true
+    input: '\b(([Ss])pace)\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">$2paaace</span>'
+  - caseSensitive: true
+    input: \b(Google Glass)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Virtual Boy</span>'
+  - caseSensitive: true
+    input: \b(smartphone)\b
+    inputType: regexp
+    output: '<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">pokédex</span>'
+  - caseSensitive: true
+    input: \b(Smartphone)\b
+    inputType: regexp
+    output: '<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Pokédex</span>'
+  - caseSensitive: true
+    input: \b(electric)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">atomic</span>'
+  - caseSensitive: true
+    input: \b(Electric)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Atomic</span>'
+  - caseSensitive: false
+    input: '\b(senator(s?))\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Elf-Lord$2</span>'
+  - caseSensitive: false
+    input: \b((C)ar)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">$2at</span>'
+  - caseSensitive: false
+    input: \b((E)lection)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">$2ating contest</span>'
+  - caseSensitive: false
+    input: \b(congressional leader(s)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">river spirit$2</span>'
+  - caseSensitive: true
+    input: '\b([Hh]omeland [Ss]ecurity)\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Homestar Runner</span>'
+  - caseSensitive: false
+    input: \b(could not be reached for comment)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">is guilty and everyone knows it</span>'
+  urls: []
+- enabled: true
+  html: output
+  name: Technology
+  substitutions:
+  - caseSensitive: true
+    input: \b(Google)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">TEH GOOGLES</span>'
+  - caseSensitive: true
+    input: \b(Apple)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Sith Brotherhood</span>'
+  - caseSensitive: true
+    input: \b(Apple CEO)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Sith Lord</span>'
+  - caseSensitive: true
+    input: \b(Microsoft)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Galactic Empire</span>'
+  urls: []
+- enabled: true
+  html: output
+  name: Political
+  substitutions:
+  - caseSensitive: true
+    input: '\b(([Tt]he )?House of Representatives)\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Ikea</span>'
+  - caseSensitive: true
+    input: White House
+    inputType: wholewords
+    output: '<span title="White House" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Out House</span>'
+  - caseSensitive: true
+    input: Senate
+    inputType: wholewords
+    output: '<span title="Senate" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Clown College</span>'
+  - caseSensitive: true
+    input: Congress
+    inputType: wholewords
+    output: '<span title="Congress" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Idiot House</span>'
+  - caseSensitive: true
+    input: \b(Republicans|Republican Party)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Legions of Zuul</span>'
+  - caseSensitive: true
+    input: '\b(Republican(?! Party))\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Zuul Acolyte</span>'
+  - caseSensitive: true
+    input: \b(Democrats|Democratic Party)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Cult of C''thulu</span>'
+  - caseSensitive: true
+    input: Democrat
+    inputType: wholewords
+    output: '<span title="Democrat" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">C''thulu Cultist</span>'
+  - caseSensitive: true
+    input: '\b(([Tt]he )?President)\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Mayor Mc''Cheese</span>'
+  - caseSensitive: true
+    input: \b(Pentagon)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Deathstar</span>'
+  - caseSensitive: true
+    input: NATO
+    inputType: wholewords
+    output: '<span title="NATO" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">The Last Alliance of Elves and Men</span>'
+  - caseSensitive: true
+    input: California
+    inputType: wholewords
+    output: '<span title="California" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">The Glorious People''s Republic of California</span>'
+  urls: []
+- enabled: true
+  html: output
+  name: Cloud to Butt
+  substitutions:
+  - caseSensitive: true
+    input: \b(The Cloud)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">My Butt</span>'
+  - caseSensitive: true
+    input: \b(The cloud)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">My butt</span>'
+  - caseSensitive: true
+    input: \b(the cloud)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">my butt</span>'
+  urls: []
+version: '0.15'
