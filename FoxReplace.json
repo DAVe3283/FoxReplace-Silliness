@@ -176,7 +176,7 @@
           "caseSensitive": false
         },
         {
-          "input": "\\b(congressional leader(s)\\b",
+          "input": "\\b(congressional leader(s))\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">river spirit$2</span>",
           "caseSensitive": false
@@ -217,6 +217,12 @@
           "input": "\\b(Apple CEO)\\b",
           "inputType": "regexp",
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sith Lord</span>",
+          "caseSensitive": true
+        },
+        {
+          "input": "\\b(CEO)\\b",
+          "inputType": "regexp",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Lord</span>",
           "caseSensitive": true
         },
         {
