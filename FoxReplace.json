@@ -210,7 +210,7 @@
         {
           "input": "\\b(Apple)\\b",
           "inputType": "regexp",
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Rebel Alliance</span>",
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sith Brotherhood</span>",
           "caseSensitive": true
         },
         {
