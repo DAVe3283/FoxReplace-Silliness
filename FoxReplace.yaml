@@ -166,9 +166,17 @@ groups:
     inputType: regexp
     output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Lord</span>'
   - caseSensitive: true
+    input: \b(DRM)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">consumer punishment</span>'
+  - caseSensitive: true
     input: \b(Microsoft)\b
     inputType: regexp
     output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Galactic Empire</span>'
+  - caseSensitive: true
+    input: '\b(([T|t])ablet)\b'
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">$2ricorder</span>'
   urls: []
 - enabled: true
   html: output
@@ -214,6 +222,14 @@ groups:
     input: \b(Pentagon)\b
     inputType: regexp
     output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Deathstar</span>'
+  - caseSensitive: true
+    input: \b(DHS)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">KGB</span>'
+  - caseSensitive: true
+    input: \b(CIA)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Stasi</span>'
   - caseSensitive: true
     input: NATO
     inputType: wholewords
