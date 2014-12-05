@@ -279,6 +279,30 @@
       "substitutions": [
         {
           "caseSensitive": true, 
+          "input": "\\b([Pp]rotester(s))\\b", 
+          "inputType": "regexp", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Power Ranger$2</span>"
+        }, 
+        {
+          "caseSensitive": true, 
+          "input": "\\b(Police( Force)?)\\b", 
+          "inputType": "regexp", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Orc Horde</span>"
+        }, 
+        {
+          "caseSensitive": true, 
+          "input": "\\b(police( force)?)\\b", 
+          "inputType": "regexp", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">orc horde</span>"
+        }, 
+        {
+          "caseSensitive": true, 
+          "input": "\\b(Supreme Court)\\b", 
+          "inputType": "regexp", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Justice League</span>"
+        }, 
+        {
+          "caseSensitive": true, 
           "input": "\\b(([Tt]he )?House of Representatives)\\b", 
           "inputType": "regexp", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Ikea</span>"
