@@ -4,6 +4,10 @@ groups:
   name: General Silliness
   substitutions:
   - caseSensitive: false
+    input: \b([Ee]bola)\b
+    inputType: regexp
+    output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">EBOLLLLAAAAAAAAA</span>'
+  - caseSensitive: false
     input: \b(Internet)\b
     inputType: regexp
     output: '<span title="$1" style="text-shadow: 0em 0em 0.2em rgb(128, 133, 246)">Web-O-Tron</span>'
