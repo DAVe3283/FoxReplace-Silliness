@@ -9,6 +9,24 @@
       "substitutions": [
         {
           "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "(New York)", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Metropolis</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Chicago)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Gotham City</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b(the new)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">old and busted</span>"
+        }, 
+        {
+          "inputType": "regexp", 
           "caseSensitive": false, 
           "input": "\\b(ebola)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">EBOLLLLAAAAAAAAA</span>"

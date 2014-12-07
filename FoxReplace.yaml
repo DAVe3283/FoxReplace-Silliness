@@ -2,6 +2,15 @@ groups:
 - enabled: true
   name: General Silliness
   substitutions:
+  - caseSensitive: true
+    input: (New York)
+    output: Metropolis
+  - caseSensitive: true
+    input: \b(Chicago)\b
+    output: Gotham City
+  - caseSensitive: false
+    input: \b(the new)\b
+    output: old and busted
   - caseSensitive: false
     input: \b(ebola)\b
     output: EBOLLLLAAAAAAAAA
