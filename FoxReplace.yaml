@@ -8,8 +8,14 @@ groups:
   - caseSensitive: true
     input: \b(Chicago)\b
     output: Gotham City
-  - caseSensitive: false
-    input: \b(the new)\b
+  - caseSensitive: true
+    input: '\b(The New)(?= [A-Z]\w+)'
+    output: Old and Busted
+  - caseSensitive: true
+    input: '\b(The new)(?= [A-Z]\w+)'
+    output: Old and busted
+  - caseSensitive: true
+    input: '\b(the new)(?= [A-Z]\w+)'
     output: old and busted
   - caseSensitive: false
     input: \b(ebola)\b

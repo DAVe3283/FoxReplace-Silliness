@@ -21,8 +21,20 @@
         }, 
         {
           "inputType": "regexp", 
-          "caseSensitive": false, 
-          "input": "\\b(the new)\\b", 
+          "caseSensitive": true, 
+          "input": "\\b(The New)(?= [A-Z]\\w+)", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Old and Busted</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(The new)(?= [A-Z]\\w+)", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Old and busted</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(the new)(?= [A-Z]\\w+)", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">old and busted</span>"
         }, 
         {
