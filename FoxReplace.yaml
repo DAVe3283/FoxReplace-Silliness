@@ -10,13 +10,13 @@ groups:
     output: Gotham City
   - caseSensitive: true
     input: '\b(The New)(?= [A-Z]\w+)'
-    output: Old and Busted
+    output: The Old and Busted
   - caseSensitive: true
     input: '\b(The new)(?= [A-Z]\w+)'
-    output: Old and busted
+    output: The old and busted
   - caseSensitive: true
     input: '\b(the new)(?= [A-Z]\w+)'
-    output: old and busted
+    output: the old and busted
   - caseSensitive: false
     input: \b(ebola)\b
     output: EBOLLLLAAAAAAAAA
@@ -128,11 +128,11 @@ groups:
   name: Technology
   substitutions:
   - caseSensitive: true
-    input: \b(Google)
-    output: TEH GOOGLES
+    input: '\b(Google(''?s?))\b'
+    output: TEH GOOGLE$2
   - caseSensitive: true
-    input: \b(Apple)
-    output: Sith Brotherhood
+    input: '\b(Apple(''?s?))\b'
+    output: Sith Brotherhood$2
   - caseSensitive: true
     input: \b(Apple CEO)
     output: Sith Lord
@@ -146,8 +146,8 @@ groups:
     input: \b(Microsoft)
     output: Galactic Empire
   - caseSensitive: false
-    input: \b((t)ablet)
-    output: $2ricorder
+    input: '\b((t)ablet(''?s?))\b'
+    output: $2ricorder$3
   urls: []
 - enabled: true
   name: Political
@@ -156,10 +156,10 @@ groups:
     input: \b(protester)
     output: Power Ranger
   - caseSensitive: true
-    input: '\b(Police( Force)?)\b'
+    input: '\b(Police( [Ff]orce)?)\b'
     output: Orc Horde
   - caseSensitive: true
-    input: '\b(police( force)?)\b'
+    input: '\b(police( [Ff]orce)?)\b'
     output: orc horde
   - caseSensitive: true
     input: \b(Supreme Court)
@@ -174,8 +174,8 @@ groups:
     input: (Senate)
     output: Clown College
   - caseSensitive: true
-    input: (Congress)
-    output: Idiot House
+    input: '(Congress(''?s?))\b'
+    output: Idiot House$2
   - caseSensitive: true
     input: \b(Republicans|Republican Party)\b
     output: Legions of Zuul
@@ -186,8 +186,8 @@ groups:
     input: (Democrats|Democratic Party)
     output: 'Cult of C''thulu'
   - caseSensitive: true
-    input: (Democrat)
-    output: 'C''thulu Cultist'
+    input: '(Democrat(''?s?))\b'
+    output: 'C''thulu Cultist$2'
   - caseSensitive: true
     input: '(([Tt]he )?President)'
     output: 'Mayor Mc''Cheese'
