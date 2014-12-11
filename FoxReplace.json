@@ -296,8 +296,14 @@
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\b((t)ablet('?s?))\\b", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2ricorder$3</span>"
+          "input": "\\b(i(P)hone('?s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Derp$2hone$3</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b(i(P)ad('?s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Derp$2ad$3</span>"
         }
       ]
     }, 

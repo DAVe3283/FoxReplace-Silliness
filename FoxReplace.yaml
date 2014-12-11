@@ -146,8 +146,11 @@ groups:
     input: \b(Microsoft)
     output: Galactic Empire
   - caseSensitive: false
-    input: '\b((t)ablet(''?s?))\b'
-    output: $2ricorder$3
+    input: '\b(i(P)hone(''?s?))\b'
+    output: Derp$2hone$3
+  - caseSensitive: false
+    input: '\b(i(P)ad(''?s?))\b'
+    output: Derp$2ad$3
   urls: []
 - enabled: true
   name: Political
