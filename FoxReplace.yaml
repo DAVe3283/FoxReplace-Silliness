@@ -3,10 +3,10 @@ groups:
   name: General Silliness
   substitutions:
   - caseSensitive: true
-    input: (New York)
+    input: (New York( City)?)
     output: Metropolis
   - caseSensitive: true
-    input: \b(Chicago)\b
+    input: \b(Chicago( City)?)\b
     output: Gotham City
   - caseSensitive: true
     input: '\b(The New)(?= [A-Z]\w+)'
@@ -62,6 +62,12 @@ groups:
   - caseSensitive: true
     input: \b(Burn)\b
     output: Dephlogisticate
+  - caseSensitive: true
+    input: \b((LHC)|(Large Hadron Collider))
+    output: Death Ray
+  - caseSensitive: false
+    input: (\$\d+(\.\d+)? ?(M(il(lion)?)?|B(il(lion)?)?|T(rillion)?))\b
+    output: a Bajillion dollars
   urls: []
 - enabled: true
   name: 'XKCD #1288'
