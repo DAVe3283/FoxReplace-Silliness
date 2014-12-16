@@ -66,8 +66,12 @@ groups:
     input: \b((LHC)|(Large Hadron Collider))
     output: Death Ray
   - caseSensitive: false
-    input: ((\bUS)?\$\d+(\.\d+)? ?(M(il(lion)?)?|B(il(lion)?)?|T(rillion)?))\b
+    input: ((\ba\s)?(\bUS)?(\$|USD)\d+(\.\d+)?\s?(M(il\.?(lion)?)?|B(il\.?(lion)?)?|T(rillion)?))\b
     output: a Bajillion dollars
+  # In progress, but not working yet.
+  # - caseSensitive: false
+  #   input: '((a\s)?(?:\s[^$])\d+(\.\d+)? ?(Mil\.?(lion?)?|Bil\.?(lion?)?|Trillion?))\b'
+  #   output: a buttload of
   urls: []
 - enabled: true
   name: 'XKCD #1288'

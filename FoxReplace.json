@@ -136,7 +136,7 @@
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "((\\bUS)?\\$\\d+(\\.\\d+)? ?(M(il(lion)?)?|B(il(lion)?)?|T(rillion)?))\\b", 
+          "input": "((\\ba\\s)?(\\bUS)?(\\$|USD)\\d+(\\.\\d+)?\\s?(M(il\\.?(lion)?)?|B(il\\.?(lion)?)?|T(rillion)?))\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">a Bajillion dollars</span>"
         }
       ]
