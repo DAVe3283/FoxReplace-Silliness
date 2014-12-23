@@ -119,8 +119,8 @@ groups:
     input: '\b(Senator(s?))\b'
     output: Elf-Lord$2
   - caseSensitive: false
-    input: \b((c)ar)\b
-    output: $2at
+    input: \b((c)ar(s?))\b
+    output: $2at$3
   - caseSensitive: false
     input: \b((e)lection)
     output: $2ating contest

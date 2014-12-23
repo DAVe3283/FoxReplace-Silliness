@@ -234,8 +234,8 @@
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\b((c)ar)\\b", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2at</span>"
+          "input": "\\b((c)ar(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2at$3</span>"
         }, 
         {
           "inputType": "regexp", 
