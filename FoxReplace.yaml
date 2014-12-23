@@ -3,7 +3,7 @@ groups:
   name: General Silliness
   substitutions:
   - caseSensitive: true
-    input: (New York( City)?)
+    input: ((NYC)|(New York( City)?(?! State)))\b
     output: Metropolis
   - caseSensitive: true
     input: \b(Chicago( City)?)\b
@@ -175,6 +175,12 @@ groups:
     input: '\b(police( [Ff]orce)?)\b'
     output: orc horde
   - caseSensitive: true
+    input: '\b(cop(''?s?))\b'
+    output: orc$2
+  - caseSensitive: true
+    input: '\b(Cop(''?s?))\b'
+    output: Orc$2
+  - caseSensitive: true
     input: \b(Supreme Court)
     output: Justice League
   - caseSensitive: true
@@ -190,13 +196,13 @@ groups:
     input: '(Congress(''?s?))\b'
     output: Idiot House$2
   - caseSensitive: true
-    input: \b(Republican Party)\b
+    input: \b((Republican Party)|(GOP))\b
     output: Legions of Zuul
   - caseSensitive: true
     input: '\b(Republican(''?s?)(?! Party))\b'
     output: 'Zuul Acolyte$2'
   - caseSensitive: true
-    input: (Democratic Party)
+    input: ((Democratic Party)|(DNC))
     output: 'Cult of C''thulu'
   - caseSensitive: true
     input: '(Democrat(''?s?))\b'
