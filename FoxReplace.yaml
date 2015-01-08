@@ -9,6 +9,9 @@ groups:
     input: \b(Chicago( City)?)\b
     output: Gotham City
   - caseSensitive: true
+    input: '\b(([Cc]ity [Of] )?San Fransisco( [Cc]ity)?)\b'
+    output: Hipster Fortress
+  - caseSensitive: true
     input: '\b(The New)(?= [A-Z]\w+)'
     output: The Old and Busted
   - caseSensitive: true
@@ -68,6 +71,12 @@ groups:
   - caseSensitive: false
     input: ((\ba\s)?(\bUS)?(\$|USD)\d+(\.\d+)?\s?(M(il\.?(lion)?)?|B(il\.?(lion)?)?|T(rillion)?))\b
     output: a Bajillion dollars
+  - caseSensitive: true
+    input: \b(economics)\b
+    output: divination
+  - caseSensitive: true
+    input: \b(Economics)\b
+    output: Divination
   # In progress, but not working yet.
   # - caseSensitive: false
   #   input: '((a\s)?(?:\s[^$])\d+(\.\d+)? ?(Mil\.?(lion?)?|Bil\.?(lion?)?|Trillion?))\b'
@@ -104,10 +113,10 @@ groups:
     input: \b(Google Glass)
     output: Virtual Boy
   - caseSensitive: true
-    input: \b(smartphone)
+    input: \b(smart ?phone)
     output: pokédex
   - caseSensitive: true
-    input: \b(Smartphone)
+    input: \b(Smart ?phone)
     output: Pokédex
   - caseSensitive: true
     input: \b(electric)\b
@@ -144,20 +153,26 @@ groups:
     input: '\b(Apple(''?s?))\b'
     output: Sith Brotherhood$2
   - caseSensitive: true
+    input: \b(Microsoft)
+    output: Galactic Empire
+  - caseSensitive: true
+    input: '\b(Intel(''?s?))\b'
+    output: Cyberdyne
+  - caseSensitive: true
     input: \b(Apple CEO)
     output: Sith Lord
   - caseSensitive: true
     input: \b(CEO)
     output: Lord
   - caseSensitive: true
-    input: \b(DRM)
+    input: \b(DRM)\b
     output: consumer punishment
-  - caseSensitive: true
-    input: \b(Microsoft)
-    output: Galactic Empire
   - caseSensitive: false
     input: '\b((t)ablet(''?s?))\b'
     output: $2ricorder$3
+  - caseSensitive: false
+    input: \b(smart ?watch)\b
+    output: Pip Boy 3000
   - caseSensitive: true
     input: '\b(i([A-Z]\w+''?s?))\b'
     output: Derp$2
