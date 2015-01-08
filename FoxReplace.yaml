@@ -9,7 +9,7 @@ groups:
     input: \b(Chicago( City)?)\b
     output: Gotham City
   - caseSensitive: true
-    input: '\b(([Cc]ity [Of] )?San Fransisco( [Cc]ity)?)\b'
+    input: '\b(([Cc]ity [Of] )?San Francisco( [Cc]ity)?)\b'
     output: Hipster Fortress
   - caseSensitive: true
     input: '\b(The New)(?= [A-Z]\w+)'
