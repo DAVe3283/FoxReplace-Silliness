@@ -12,6 +12,9 @@ groups:
     input: '\b(([Cc]ity [Of] )?San Francisco( [Cc]ity)?)\b'
     output: Hipster Fortress
   - caseSensitive: true
+    input: '\b(([Cc]ity [Of] )?Detroit)\b'
+    output: Hell
+  - caseSensitive: true
     input: '\b(The New)(?= [A-Z]\w+)'
     output: The Old and Busted
   - caseSensitive: true
