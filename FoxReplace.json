@@ -320,6 +320,12 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
+          "input": "\\b(Comcast( Corp(oration)?)?)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Satan, Inc.</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
           "input": "\\b(Apple CEO)", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sith Lord</span>"
         }, 

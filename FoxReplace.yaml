@@ -162,6 +162,9 @@ groups:
     input: '\b(Intel(''?s?))\b'
     output: Cyberdyne
   - caseSensitive: true
+    input: '\b(Comcast( Corp(oration)?)?)\b'
+    output: 'Satan, Inc.'
+  - caseSensitive: true
     input: \b(Apple CEO)
     output: Sith Lord
   - caseSensitive: true
