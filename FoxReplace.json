@@ -290,6 +290,32 @@
     {
       "html": "output", 
       "enabled": true, 
+      "name": "XKCD #1031", 
+      "urls": [], 
+      "substitutions": [
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(keyboard)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">leopard</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Keyboard)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Leopard</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(KEYBOARD)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">LEOPARD</span>"
+        }
+      ]
+    }, 
+    {
+      "html": "output", 
+      "enabled": true, 
       "name": "Technology", 
       "urls": [], 
       "substitutions": [

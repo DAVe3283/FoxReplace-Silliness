@@ -147,6 +147,19 @@ groups:
     output: is guilty and everyone knows it
   urls: []
 - enabled: true
+  name: 'XKCD #1031'
+  substitutions:
+  - caseSensitive: true
+    input: \b(keyboard)\b
+    output: leopard
+  - caseSensitive: true
+    input: \b(Keyboard)\b
+    output: Leopard
+  - caseSensitive: true
+    input: \b(KEYBOARD)\b
+    output: LEOPARD
+  urls: []
+- enabled: true
   name: Technology
   substitutions:
   - caseSensitive: true
