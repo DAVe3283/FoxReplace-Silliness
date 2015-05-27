@@ -3,6 +3,15 @@ groups:
   name: General Silliness
   substitutions:
   - caseSensitive: true
+    input: \bMillennials\b
+    output: Snake people
+  - caseSensitive: true
+    input: \bmillennials\b
+    output: snake people
+  - caseSensitive: false
+    input: \bmillennial\b
+    output: snake person
+  - caseSensitive: true
     input: ((NYC)|(New York( City)?(?! State)))\b
     output: Metropolis
   - caseSensitive: true
