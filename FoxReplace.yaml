@@ -172,8 +172,8 @@ groups:
   name: Technology
   substitutions:
   - caseSensitive: true
-    input: '\b(Google(''?s?))\b'
-    output: TEH GOOGLE$2
+    input: '\b(([Tt]he\s)?Google(''?s?))\b'
+    output: TEH GOOGLE$3
   - caseSensitive: true
     input: '\b(Apple(''?s?))\b'
     output: Sith Brotherhood$2
