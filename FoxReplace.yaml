@@ -3,16 +3,16 @@ groups:
   name: General Silliness
   substitutions:
   - caseSensitive: true
-    input: \bMillennials\b
+    input: \b(Millennials)\b
     output: Snake people
   - caseSensitive: true
-    input: \bmillennials\b
+    input: \b(millennials)\b
     output: snake people
   - caseSensitive: false
-    input: \bmillennial\b
+    input: \b(millennial)\b
     output: snake person
   - caseSensitive: true
-    input: ((NYC)|(New York( City)?(?! State)))\b
+    input: \b((NYC)|(New York( City)?(?! State)))\b
     output: Metropolis
   - caseSensitive: true
     input: \b(Chicago( City)?)\b
@@ -48,10 +48,10 @@ groups:
     input: '([Tt]yphoon( [A-Z]\w+)?)'
     output: Mecha Godzilla
   - caseSensitive: true
-    input: (terrorist)
+    input: \b(terrorist)
     output: extraterrestrial
   - caseSensitive: true
-    input: (Terrorist)
+    input: \b(Terrorist)
     output: Extraterrestrial
   - caseSensitive: true
     input: \b(oil)\b
@@ -78,7 +78,7 @@ groups:
     input: \b(Burn)\b
     output: Dephlogisticate
   - caseSensitive: true
-    input: \b((LHC)|(Large Hadron Collider))
+    input: \b(LHC|Large Hadron Collider)\b
     output: Death Ray
   - caseSensitive: false
     input: ((\ba\s)?(\bUS)?(\$|USD)\d+(\.\d+)?\s?(M(il\.?(lion)?)?|B(il\.?(lion)?)?|T(rillion)?))\b
@@ -137,7 +137,7 @@ groups:
     input: \b(Electric)\b
     output: Atomic
   - caseSensitive: True
-    input: '\b(Senator(s?))\b'
+    input: '\b(Senator(''?s?))\b'
     output: Elf-Lord$2
   - caseSensitive: false
     input: \b((c)ar(s?))\b
@@ -149,10 +149,10 @@ groups:
     input: \b(congressional leader)
     output: river spirit
   - caseSensitive: false
-    input: \b(homeland security)
+    input: \b(homeland security)\b
     output: Homestar Runner
   - caseSensitive: false
-    input: \b(could not be reached for comment)
+    input: \b(could not be reached for comment)\b
     output: is guilty and everyone knows it
   urls: []
 - enabled: true
@@ -257,7 +257,7 @@ groups:
     input: (Pentagon)
     output: Deathstar
   - caseSensitive: true
-    input: \b(DHS)
+    input: \b(DHS)\b
     output: KGB
   - caseSensitive: true
     input: \b(CIA)
@@ -266,8 +266,17 @@ groups:
     input: \b(NATO)
     output: The Last Alliance of Elves and Men
   - caseSensitive: true
-    input: (California)
+    input: \b(California)\b
     output: 'The Glorious People''s Republic of California'
+  - caseSensitive: true
+    input: \b(DoD)\b
+    output: 'DoW'
+  - caseSensitive: false
+    input: \b(Department of Defense)\b
+    output: 'Department of War'
+  - caseSensitive: true
+    input: \b(Secret Service)\b
+    output: 'Secret Sauce'
   urls: []
 - enabled: true
   name: Cloud to Butt

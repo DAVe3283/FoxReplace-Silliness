@@ -10,25 +10,25 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\bMillennials\\b", 
+          "input": "\\b(Millennials)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Snake people</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\bmillennials\\b", 
+          "input": "\\b(millennials)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">snake people</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\bmillennial\\b", 
+          "input": "\\b(millennial)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">snake person</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "((NYC)|(New York( City)?(?! State)))\\b", 
+          "input": "\\b((NYC)|(New York( City)?(?! State)))\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Metropolis</span>"
         }, 
         {
@@ -100,13 +100,13 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "(terrorist)", 
+          "input": "\\b(terrorist)", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">extraterrestrial</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "(Terrorist)", 
+          "input": "\\b(Terrorist)", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Extraterrestrial</span>"
         }, 
         {
@@ -160,7 +160,7 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b((LHC)|(Large Hadron Collider))", 
+          "input": "\\b(LHC|Large Hadron Collider)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Death Ray</span>"
         }, 
         {
@@ -270,7 +270,7 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(Senator(s?))\\b", 
+          "input": "\\b(Senator('?s?))\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Elf-Lord$2</span>"
         }, 
         {
@@ -294,13 +294,13 @@
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\b(homeland security)", 
+          "input": "\\b(homeland security)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Homestar Runner</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\b(could not be reached for comment)", 
+          "input": "\\b(could not be reached for comment)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">is guilty and everyone knows it</span>"
         }
       ]
@@ -510,7 +510,7 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(DHS)", 
+          "input": "\\b(DHS)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">KGB</span>"
         }, 
         {
@@ -528,8 +528,26 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "(California)", 
+          "input": "\\b(California)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">The Glorious People's Republic of California</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(DoD)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">DoW</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b(Department of Defense)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Department of War</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Secret Service)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Secret Sauce</span>"
         }
       ]
     }, 
