@@ -95,6 +95,72 @@ groups:
   #   output: a buttload of
   urls: []
 - enabled: true
+  name: 'XKCD #1625'
+  substitutions:
+  - caseSensitive: false
+    input: \b((d)ebate)\b
+    output: $2ance-off
+  - caseSensitive: true
+    input: '\b(Self[\s\-]Driving)\b'
+    output: Uncontrollably Swerving
+  - caseSensitive: true
+    input: '\b(Self[\s\-]driving)\b'
+    output: Uncontrollably swerving
+  - caseSensitive: true
+    input: '\b(self[\s\-]driving)\b'
+    output: uncontrollably swerving
+  - caseSensitive: false
+    input: \b((p)oll)\b
+    output: $2sychic reading
+  - caseSensitive: true
+    input: \b(Candidate)
+    output: Airbender
+  - caseSensitive: true
+    input: \b(candidate)
+    output: airbender
+  - caseSensitive: false
+    input: \b((d)rone)
+    output: $2og
+  - caseSensitive: false
+    input: \b(vows to)\b
+    output: 'probably won''t'
+  - caseSensitive: false
+    input: \b(at large)\b
+    output: very large
+  - caseSensitive: false
+    input: \b((s)uccessfully)\b
+    output: $2uddenly
+  - caseSensitive: false
+    input: \b((physically )?expands)\b
+    output: physically expands
+  - caseSensitive: false
+    input: '\b((first|second|third)[\s\-]degree)\b'
+    output: 'friggin'' awful'
+  - caseSensitive: false
+    input: \b(an unknown number)\b
+    output: like hundreds
+  - caseSensitive: false
+    input: \b(front runner)\b
+    output: Blade Runner
+  - caseSensitive: True
+    input: \b(Global)\b
+    output: Spherical
+  # Years -> Minutes and vice versa is hard to do because the tool-tips from the
+  # first conversion get corrupted by the 2nd conversion
+  - caseSensitive: True
+    input: \b(global)\b
+    output: spherical
+  - caseSensitive: false
+    input: \b(no indication)\b
+    output: lots of signs
+  - caseSensitive: false
+    input: \b(urged restraint)\b
+    output: drunkenly egged on
+  - caseSensitive: false
+    input: \b(horsepower)\b
+    output: tons of horsemeat
+  urls: []
+- enabled: true
   name: 'XKCD #1288'
   substitutions:
   - caseSensitive: true
