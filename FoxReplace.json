@@ -536,6 +536,36 @@
           "caseSensitive": true, 
           "input": "\\b(i([A-Z]\\w+'?s?))\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Derp$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Cyber Attack)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Ninja Invasion</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(cyber attack)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">ninja invasion</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b(cyber criminals)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Internet Bad Guys</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Hacker('?s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Ninja$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(hacker('?s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">ninja$2</span>"
         }
       ]
     }, 
@@ -778,6 +808,24 @@
           "caseSensitive": true, 
           "input": "\\b((search )?warrant)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">permission to ransack</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b((b)allot)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2allet</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(North Korea)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Best Korea</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(European Union)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">European Onion</span>"
         }
       ]
     }, 

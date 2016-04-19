@@ -273,6 +273,21 @@ groups:
   - caseSensitive: true
     input: '\b(i([A-Z]\w+''?s?))\b'
     output: Derp$2
+  - caseSensitive: true
+    input: \b(Cyber Attack)\b
+    output: Ninja Invasion
+  - caseSensitive: true
+    input: \b(cyber attack)\b
+    output: ninja invasion
+  - caseSensitive: false
+    input: \b(cyber criminals)\b
+    output: Internet Bad Guys
+  - caseSensitive: true
+    input: \b(Hacker('?s?))\b
+    output: Ninja$2
+  - caseSensitive: true
+    input: \b(hacker('?s?))\b
+    output: ninja$2
   urls: []
 - enabled: true
   name: Political
@@ -394,6 +409,15 @@ groups:
   - caseSensitive: true
     input: \b((search )?warrant)\b
     output: permission to ransack
+  - caseSensitive: false
+    input: \b((b)allot)\b
+    output: $2allet
+  - caseSensitive: true
+    input: \b(North Korea)\b
+    output: Best Korea
+  - caseSensitive: true
+    input: \b(European Union)\b
+    output: European Onion
   urls: []
 - enabled: true
   name: Election 2016
