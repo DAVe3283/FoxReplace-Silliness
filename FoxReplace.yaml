@@ -109,9 +109,12 @@ groups:
   - caseSensitive: true
     input: '\b(self[\s\-]driving)\b'
     output: uncontrollably swerving
-  - caseSensitive: false
-    input: \b((p)oll)\b
-    output: $2sychic reading
+  - caseSensitive: true
+    input: \b(Poll)\b
+    output: Psychic Reading
+  - caseSensitive: true
+    input: \b(poll)\b
+    output: psychic reading
   - caseSensitive: true
     input: \b(Candidate)
     output: Airbender
@@ -343,6 +346,70 @@ groups:
   - caseSensitive: true
     input: \b(Secret Service)\b
     output: 'Secret Sauce'
+  - caseSensitive: true
+    input: \b(Donation(s?))\b
+    output: Sacrifice$2
+  - caseSensitive: true
+    input: \b(donation(s?))\b
+    output: sacrifice$2
+  - caseSensitive: true
+    input: \b(Donor(s?))\b
+    output: Victim$2
+  - caseSensitive: true
+    input: \b(donor(s?))\b
+    output: victim$2
+  - caseSensitive: true
+    input: \b(PAC(s?))\b
+    output: politician investment firm$2
+  - caseSensitive: false
+    input: \b((c)ampaign)\b
+    output: $2rusade
+  - caseSensitive: true
+    input: \b(Civil Rights)\b
+    output: Basic Politeness
+  - caseSensitive: true
+    input: \b(civil rights)\b
+    output: basic politeness
+  - caseSensitive: true
+    input: \b(Border (Wall|Fence))\b
+    output: Sand Castle
+  - caseSensitive: true
+    input: \b(border (wall|fence))\b
+    output: sand castle
+  - caseSensitive: false
+    input: \b((c)onvention)\b
+    output: $2ircus
+  - caseSensitive: false
+    input: \b((i)mpeach)\b
+    output: $2mpale
+  - caseSensitive: true
+    input: \b(Civil( Asset)? Forfeiture)\b
+    output: Theft by Orc
+  - caseSensitive: true
+    input: \b(civil( asset)? forfeiture)\b
+    output: theft by Orc
+  - caseSensitive: true
+    input: \b((Search )?Warrant)\b
+    output: Permission to Ransack
+  - caseSensitive: true
+    input: \b((search )?warrant)\b
+    output: permission to ransack
+  urls: []
+- enabled: true
+  name: Election 2016
+  substitutions:
+  - caseSensitive: true
+    input: \b(Trump)\b
+    output: Drumpf
+  - caseSensitive: true
+    input: \b(Hillary(( Rodham)? Clinton)?)\b
+    output: Delores Umbridge
+  - caseSensitive: true
+    input: \b(Bernie Sanders)\b
+    output: Comrade Sanders
+  - caseSensitive: true
+    input: \b(Ted Cruz)\b
+    output: Professor Snape
   urls: []
 - enabled: true
   name: Cloud to Butt

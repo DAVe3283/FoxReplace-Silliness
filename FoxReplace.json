@@ -215,9 +215,15 @@
         }, 
         {
           "inputType": "regexp", 
-          "caseSensitive": false, 
-          "input": "\\b((p)oll)\\b", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2sychic reading</span>"
+          "caseSensitive": true, 
+          "input": "\\b(Poll)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Psychic Reading</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(poll)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">psychic reading</span>"
         }, 
         {
           "inputType": "regexp", 
@@ -676,6 +682,134 @@
           "caseSensitive": true, 
           "input": "\\b(Secret Service)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Secret Sauce</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Donation(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sacrifice$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(donation(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">sacrifice$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Donor(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Victim$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(donor(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">victim$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(PAC(s?))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">politician investment firm$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b((c)ampaign)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2rusade</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Civil Rights)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Basic Politeness</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(civil rights)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">basic politeness</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Border (Wall|Fence))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sand Castle</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(border (wall|fence))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">sand castle</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b((c)onvention)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2ircus</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b((i)mpeach)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2mpale</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Civil( Asset)? Forfeiture)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Theft by Orc</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(civil( asset)? forfeiture)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">theft by Orc</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b((Search )?Warrant)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Permission to Ransack</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b((search )?warrant)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">permission to ransack</span>"
+        }
+      ]
+    }, 
+    {
+      "html": "output", 
+      "enabled": true, 
+      "name": "Election 2016", 
+      "urls": [], 
+      "substitutions": [
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Trump)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Drumpf</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Hillary(( Rodham)? Clinton)?)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Delores Umbridge</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Bernie Sanders)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Comrade Sanders</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Ted Cruz)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Professor Snape</span>"
         }
       ]
     }, 
