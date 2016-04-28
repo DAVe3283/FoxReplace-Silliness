@@ -180,6 +180,12 @@
           "caseSensitive": true, 
           "input": "\\b(Economics)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Divination</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": false, 
+          "input": "\\b((m)ath)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2eth</span>"
         }
       ]
     }, 
@@ -800,13 +806,13 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b((Search )?Warrant)\\b", 
+          "input": "\\b(([Aa] )?(Search )?Warrant)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Permission to Ransack</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b((search )?warrant)\\b", 
+          "input": "\\b((a )?(search )?warrant)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">permission to ransack</span>"
         }, 
         {

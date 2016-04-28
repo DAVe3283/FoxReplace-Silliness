@@ -89,6 +89,9 @@ groups:
   - caseSensitive: true
     input: \b(Economics)\b
     output: Divination
+  - caseSensitive: false
+    input: \b((m)ath)\b
+    output: $2eth
   # In progress, but not working yet.
   # - caseSensitive: false
   #   input: '((a\s)?(?:\s[^$])\d+(\.\d+)? ?(Mil\.?(lion?)?|Bil\.?(lion?)?|Trillion?))\b'
@@ -404,10 +407,10 @@ groups:
     input: \b(civil( asset)? forfeiture)\b
     output: theft by Orc
   - caseSensitive: true
-    input: \b((Search )?Warrant)\b
+    input: \b(([Aa] )?(Search )?Warrant)\b
     output: Permission to Ransack
   - caseSensitive: true
-    input: \b((search )?warrant)\b
+    input: \b((a )?(search )?warrant)\b
     output: permission to ransack
   - caseSensitive: false
     input: \b((b)allot)\b
