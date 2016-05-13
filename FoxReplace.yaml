@@ -98,6 +98,116 @@ groups:
   #   output: a buttload of
   urls: []
 - enabled: true
+  name: 'XKCD #1679'
+  substitutions:
+  - caseSensitive: true
+    input: \b(gaffe)\b
+    output: magic spell
+  - caseSensitive: true
+    input: \b(Gaffe)\b
+    output: Magic Spell
+  - caseSensitive: true
+    input: \b(ancient)\b
+    output: haunted
+  - caseSensitive: true
+    input: \b(Ancient)\b
+    output: Haunted
+  - caseSensitive: true
+    input: \b(star-studded)\b
+    output: blood-soaked
+  - caseSensitive: true
+    input: '\b(Star-([Ss])tudded)\b'
+    output: Blood-$2oaked
+  - caseSensitive: true
+    input: \b(silver bullet)\b
+    output: way to kill werewolves
+  - caseSensitive: true
+    input: \b(Silver bullet)\b
+    output: Way to kill werewolves
+  - caseSensitive: true
+    input: \b(Silver Bullet)\b
+    output: Way to Kill Werewolves
+  - caseSensitive: true
+    input: \b(subway system)\b
+    output: tunnels I found
+  - caseSensitive: true
+    input: '\b(Subway [Ss]ystem)\b'
+    output: Tunnels I found
+  - caseSensitive: false
+    input: \b(surprising)\b
+    output: $1 (but not to me)
+  - caseSensitive: true
+    input: \b(war of words)\b
+    output: interplanetary war
+  - caseSensitive: true
+    input: \b(War of words)\b
+    output: Interplanetary war
+  - caseSensitive: true
+    input: '\b(War [Oo]f Words)\b'
+    output: Interplanetary War
+  # FoxReplace uses the JavaScript RegEx engine (no negative lookbehinds)
+  # So we can't prevent "sexual tension -> sexual sexual tension"
+  # Though I am not convinced this is a problem :D
+  - caseSensitive: true
+    input: \b(tension)\b
+    output: sexual tension
+  - caseSensitive: true
+    input: \b(Tension)\b
+    output: Sexual Tension
+  - caseSensitive: true
+    input: \b(cautiously optimistic)\b
+    output: delusional
+  - caseSensitive: true
+    input: '\b(Cautiously [Oo]ptimistic)\b'
+    output: Delusional
+  - caseSensitive: true
+    input: \b(Doctor Who)\b
+    output: The Big Bang Theory
+  - caseSensitive: true
+    input: \b(win votes)\b
+    output: find Pokémon
+  - caseSensitive: true
+    input: '\b(Win [Vv]otes)\b'
+    output: Find Pokémon
+  - caseSensitive: true
+    input: \b(behind the headlines)\b
+    output: beyond the grave
+  - caseSensitive: true
+    input: \b(Behind the headlines)\b
+    output: Beyond the grave
+  - caseSensitive: true
+    input: '\b(Behind ([Tt]he) Headlines)\b'
+    output: Beyond $2 Grave
+  - caseSensitive: true
+    input: '\b(e\-?mail|[Ff]acebook post|tweet)\b'
+    output: poem
+  - caseSensitive: true
+    input: '\b(E\-?[Mm]ail|[Ff]acebook Post|Tweet)\b'
+    output: Poem
+  # Facebook CEO -> This Guy would conflict with CEO -> Lord
+  - caseSensitive: true
+    input: \b(latest)\b
+    output: final
+  - caseSensitive: true
+    input: \b(Latest)\b
+    output: Final
+  - caseSensitive: true
+    input: \b(disrupt)
+    output: destroy
+  - caseSensitive: true
+    input: \b(Disrupt)
+    output: Destroy
+  - caseSensitive: true
+    input: \b(meeting)\b
+    output: ménage à trois
+  - caseSensitive: true
+    input: \b(Meeting)\b
+    output: Ménage à trois
+  - caseSensitive: false
+    input: \b(scientists)\b
+    output: Channing Tatum and his friends
+  urls: []
+- enabled: true
   name: 'XKCD #1625'
   substitutions:
   - caseSensitive: false
