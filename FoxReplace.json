@@ -510,12 +510,6 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(Apple CEO)", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Sith Lord</span>"
-        }, 
-        {
-          "inputType": "regexp", 
-          "caseSensitive": true, 
           "input": "\\b(CEO)", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Lord</span>"
         }, 
@@ -572,6 +566,12 @@
           "caseSensitive": true, 
           "input": "\\b(hacker('?s?))\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">ninja$2</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Android)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">GLaDOS</span>"
         }
       ]
     }, 
@@ -832,6 +832,18 @@
           "caseSensitive": true, 
           "input": "\\b(European Union)\\b", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">European Onion</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(Surveillance)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Voyeurism</span>"
+        }, 
+        {
+          "inputType": "regexp", 
+          "caseSensitive": true, 
+          "input": "\\b(surveillance)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">voyeurism</span>"
         }
       ]
     }, 

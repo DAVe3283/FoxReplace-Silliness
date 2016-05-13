@@ -259,9 +259,6 @@ groups:
     input: '\b(Comcast( Corp(oration)?)?)\b'
     output: 'Satan, Inc.'
   - caseSensitive: true
-    input: \b(Apple CEO)
-    output: Sith Lord
-  - caseSensitive: true
     input: \b(CEO)
     output: Lord
   - caseSensitive: true
@@ -291,6 +288,9 @@ groups:
   - caseSensitive: true
     input: \b(hacker('?s?))\b
     output: ninja$2
+  - caseSensitive: true
+    input: \b(Android)\b
+    output: GLaDOS
   urls: []
 - enabled: true
   name: Political
@@ -421,6 +421,12 @@ groups:
   - caseSensitive: true
     input: \b(European Union)\b
     output: European Onion
+  - caseSensitive: true
+    input: \b(Surveillance)\b
+    output: Voyeurism
+  - caseSensitive: true
+    input: \b(surveillance)\b
+    output: voyeurism
   urls: []
 - enabled: true
   name: Election 2016
