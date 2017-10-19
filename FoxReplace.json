@@ -371,15 +371,15 @@
         }, 
         {
           "inputType": "regexp", 
-          "caseSensitive": true, 
-          "input": "\\b(disrupt)", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">destroy</span>"
+          "caseSensitive": false, 
+          "input": "\\b((d)isruption)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2estruction</span>"
         }, 
         {
           "inputType": "regexp", 
-          "caseSensitive": true, 
-          "input": "\\b(Disrupt)", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Destroy</span>"
+          "caseSensitive": false, 
+          "input": "\\b((d)isrupt(s)?)\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$2estroy$3</span>"
         }, 
         {
           "inputType": "regexp", 

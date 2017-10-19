@@ -191,12 +191,12 @@ groups:
   - caseSensitive: true
     input: \b(Latest)\b
     output: Final
-  - caseSensitive: true
-    input: \b(disrupt)
-    output: destroy
-  - caseSensitive: true
-    input: \b(Disrupt)
-    output: Destroy
+  - caseSensitive: false
+    input: \b((d)isruption)\b
+    output: $2estruction
+  - caseSensitive: false
+    input: \b((d)isrupt(s)?)\b
+    output: $2estroy$3
   - caseSensitive: true
     input: \b(meeting)\b
     output: ménage à trois
