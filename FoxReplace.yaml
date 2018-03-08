@@ -307,11 +307,14 @@ groups:
     input: \b(Google Glass)
     output: Virtual Boy
   - caseSensitive: true
-    input: \b(smart ?phone)
-    output: pokédex
+    input: \b(smart ?phone('?s?))
+    output: pokédex$2
   - caseSensitive: true
-    input: \b(Smart ?phone)
-    output: Pokédex
+    input: \b(Smart ?phone('?s?))
+    output: Pokédex$2
+  - caseSensitive: true
+    input: \b(SMART ?PHONE('?S?))
+    output: POKÉDEX$2
   - caseSensitive: true
     input: \b(electric)\b
     output: atomic
@@ -401,6 +404,12 @@ groups:
   - caseSensitive: true
     input: \b(Android)\b
     output: GLaDOS
+  - caseSensitive: true
+    input: \b(Twitter)\b
+    output: Twit
+  - caseSensitive: false
+    input: \b(Bitcoins?)\b
+    output: Magic Beans
   urls: []
 - enabled: true
   name: Political
