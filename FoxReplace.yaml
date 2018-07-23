@@ -134,8 +134,8 @@ groups:
     input: '\b(Subway [Ss]ystem)\b'
     output: Tunnels I found
   - caseSensitive: false
-    input: \b(surprising)\b
-    output: $1 (but not to me)
+    input: \b((not\s+)?(surprising))\b
+    output: $3 (but not to me)
   - caseSensitive: true
     input: \b(war of words)\b
     output: interplanetary war
@@ -307,13 +307,13 @@ groups:
     input: \b(Google Glass)
     output: Virtual Boy
   - caseSensitive: true
-    input: \b(smart ?phone('?s?))
+    input: \b(smart[\s\-]?phone('?s?))
     output: pokédex$2
   - caseSensitive: true
-    input: \b(Smart ?phone('?s?))
+    input: \b(Smart[\s\-]?phone('?s?))
     output: Pokédex$2
   - caseSensitive: true
-    input: \b(SMART ?PHONE('?S?))
+    input: \b(SMART[\s\-]?PHONE('?S?))
     output: POKÉDEX$2
   - caseSensitive: true
     input: \b(electric)\b

@@ -264,8 +264,8 @@
         {
           "inputType": "regexp", 
           "caseSensitive": false, 
-          "input": "\\b(surprising)\\b", 
-          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$1 (but not to me)</span>"
+          "input": "\\b((not\\s+)?(surprising))\\b", 
+          "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">$3 (but not to me)</span>"
         }, 
         {
           "inputType": "regexp", 
@@ -598,19 +598,19 @@
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(smart ?phone('?s?))", 
+          "input": "\\b(smart[\\s\\-]?phone('?s?))", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">pok\u00e9dex$2</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(Smart ?phone('?s?))", 
+          "input": "\\b(Smart[\\s\\-]?phone('?s?))", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">Pok\u00e9dex$2</span>"
         }, 
         {
           "inputType": "regexp", 
           "caseSensitive": true, 
-          "input": "\\b(SMART ?PHONE('?S?))", 
+          "input": "\\b(SMART[\\s\\-]?PHONE('?S?))", 
           "output": "<span title=\"$1\" style=\"text-shadow: 0em 0em 0.2em rgb(128, 133, 246)\">POK\u00c9DEX$2</span>"
         }, 
         {
